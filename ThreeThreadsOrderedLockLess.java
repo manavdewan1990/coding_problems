@@ -2,6 +2,9 @@ package snippet;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+Threads are busy looping, which will lead to 100% CPU usage. You should synchronize the threads instead.
+**/
 public class ThreeThreadsOrderedLockLess {
 
 	AtomicInteger sharedOutput = new AtomicInteger(0);
